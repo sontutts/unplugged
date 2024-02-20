@@ -96,6 +96,7 @@ textarea {
 header {
   display: flex;
   justify-content: center;
+  padding: 15px 0;
 }
 
 header .content-wrapper {
@@ -103,19 +104,35 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
+}
+
+header a {
+  padding-bottom: 10px;
+  margin: 0;
 }
 
 header .header-divider {
-
+  width: 60%;
+}
+header nav {
+  width: 60%;
+  padding-top: 20px;
 }
 
 header nav ul {
 display: flex;
 justify-content: space-around;
+width: 60%;
+margin: 0;
 }
 
 header nav ul li {
 
+}
+
+main .content-wrapper {
+  padding: 50px 0;
 }
 
 footer {
@@ -125,10 +142,32 @@ footer {
   text-align: center;
 }
 
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  padding: 50px 0;
+}
+
+footer .contact h4 {
+  padding: 20px 0;
+}
+
+footer .contact p {
+  margin: 0;
+}
+
+footer .social h4 {
+  padding: 20px 0;
+}
+
 footer .social-icons {
 display: flex;
 justify-content: space-around;
 align-items: center;
+padding-bottom: 50px;
 }
 
 footer .social-icons p {
@@ -137,6 +176,9 @@ justify-content: center;
 align-items: center;
 }
 
+footer .copyright {
+  padding: 20px 0;
+}
 /*-- Mobile Styles- Homepage --*/
 
 /*--Hero area--*/
@@ -144,14 +186,24 @@ align-items: center;
 .hero-area {
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
 /*--aside--*/
 
 aside {
   display: flex;
   justify-content: center;
+  padding: 50px 0;
+}
+aside h3 {
+  padding: 20px 0;
 }
 
+aside p {
+  padding-bottom: 30px;
+}
+
+aside input {}
 aside .hero-area .content-wrapper {
 
 }
@@ -168,8 +220,20 @@ aside .hero-area .content-wrapper {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
+  width: 62%;
 }
 
+.features h2 {
+  padding: 50px 0 60px 0;
+  margin: 0;
+}
+.features article {
+  padding: 30px 0;
+}
+
+.features p {
+  margin: 0;
+}
 /*--reviews--*/
 
 .reviews {
@@ -177,6 +241,14 @@ aside .hero-area .content-wrapper {
   justify-content: center;
 }
 
+.reviews h2 {
+  padding-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  padding: 20px 0;
+}
 /*-- Mobile Styles- About page --*/
 
 .mission {
