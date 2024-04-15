@@ -170,7 +170,7 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
-  background-color: #202232;
+  background-color: black;
   /*width: 100%;*/
 }
 
@@ -258,7 +258,7 @@ footer .copyright {
   background-repeat: no-repeat;
   background-position: center;*/
   background-size: cover;
-  background-position: cover;
+  /*background-position: cover;*/
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -277,13 +277,6 @@ aside {
   background-color: #527158;
   display: flex;
   justify-content: center;
-}
-aside .form-description {
-  width: 40%;
-}
-aside .form {
-  /*margin-top: 30px;*/
-  width: 40%;
 }
  
 input[type=text] {
@@ -358,7 +351,6 @@ input[type=button] {
   margin: 20px 0;
 }
 /*-- Mobile Styles- About page --*/
-
 .mission {
   background-color: #527158;
   display: flex;
@@ -375,6 +367,21 @@ input[type=button] {
   margin: 0;
 }
 
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /*-- Mobile Styles- FAQ page --*/
 
 .faq {
