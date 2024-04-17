@@ -108,19 +108,9 @@ body {
   color: #e2e3ed;
 }
 
-img { 
-	width: 100%;
-}
- 
-figure {
-    margin: 0;
-}
-
 ul,
 ol {
   list-style-type: none;
-  /*text-transform: uppercase;
-  color: #e2e3ed;*/
   margin: 0;
   padding: 0;
 }
@@ -128,7 +118,6 @@ ol {
 a {
   color: #e2e3ed;
   text-decoration: none;
-  /*width: 60%;*/
 }
 
 h2 {
@@ -150,16 +139,19 @@ p {
   line-height: 1.285em;
 }
 
-/*img {
-  width: 100%;
-}*/
+img { 
+	width: 100%;
+}
+ 
+figure {
+    margin: 0;
+}
 
 address {
   font-style: normal;
 }
 
 .content-wrapper {
-  /*outline: 3px dotted red;*/
   width: 90%;
   margin: 50px 0;
 }
@@ -187,8 +179,6 @@ header figure {
 }
 
 .header-divider {
-  /*display: flex;
-  justify-content: center;*/
   background: #3a3a3a;
   width: 100%;
   height: 1px;
@@ -254,11 +244,8 @@ footer .copyright {
 
 .hero-area {
   background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
-  /*background-image: url('../img/unplugged-retreat.jpg');
-  background-repeat: no-repeat;
-  background-position: center;*/
+  background-position: center;
   background-size: cover;
-  /*background-position: cover;*/
   min-height: 500px;
   display: flex;
   justify-content: center;
@@ -277,6 +264,10 @@ aside {
   background-color: #527158;
   display: flex;
   justify-content: center;
+}
+
+aside .form {
+  margin-top: 30px;
 }
  
 input[type=text] {
@@ -307,6 +298,7 @@ input[type=button] {
 .features {
   background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
 }
@@ -325,7 +317,6 @@ input[type=button] {
   justify-content: center;
   align-items: flex-start;
   flex-flow: row wrap;
-  /*font-size: 3.75rem;*/
 }
 
 .features p {
@@ -357,16 +348,6 @@ input[type=button] {
   justify-content: center;
 }
 
-.contact-section {
-  background-color: #2a423a;
-  display: flex;
-  justify-content: center;
-}
-
-.contact-content p {
-  margin: 0;
-}
-
 .map figure {
   width: 100%;
   height: 0;
@@ -382,6 +363,17 @@ input[type=button] {
   top: 0;
   left: 0;
 }
+
+.contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-content p {
+  margin: 0;
+}
+
 /*-- Mobile Styles- FAQ page --*/
 
 .faq {
@@ -508,10 +500,6 @@ input[type=button] {
       margin: 100px 0;
     }
 
-    /*h1 {
-      font-size: 3rem;
-      line-height: 3rem;
-    }*/
     h2 {
       font-size: 2,25rem;
       line-height: 1.333;
@@ -533,21 +521,25 @@ input[type=button] {
     }
 
     header nav {
-      width: 100%;
-    }
-
-    header nav ul li {
-      font-size: 1.75em;
-    }
-    
-    .header-divider {
-      /*display: none;*/
       width: 25%;
     }
 
+    header nav ul {
+      justify-content: space-between;
+    }
+
+    .header-divider {
+      display: none;
+    }
+
+    /*header nav ul li {
+      font-size: 1.25em;
+    }*/
+
     /*Hero Area*/
     .hero-area h1 {
-      width: 80%;
+      font-size: 3em;
+      line-height: 1;
       margin: 0;
     }
     /*Aside*/
@@ -557,7 +549,7 @@ input[type=button] {
       justify-content: space-between;
       align-content: flex-start;
     }
-    aside .content-wrapper .form-description
+    aside .content-wrapper .form-description,
     aside .content-wrapper .form {
       width: 40%;
       margin: 0;
@@ -587,6 +579,8 @@ input[type=button] {
     .reviews h2 {
       width: 85%;
     }
+
+    .reviews article figure,
     .reviews article div {
       width: 49%;
     }
@@ -623,11 +617,6 @@ input[type=button] {
     /* ==========================================================================
    About Page
    ========================================================================== */
-   .header-divider {
-    /*display: none;*/
-    width: 25%;
-  }
-
    .mission-content {
     display: flex;
     justify-content: space-between;
@@ -637,6 +626,11 @@ input[type=button] {
   .mission-content p {
     width: 45%;
   }
+
+  .map figure {
+    padding-bottom: 45.5%;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -644,10 +638,6 @@ input[type=button] {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-  }
-
-  .map figure {
-    padding-bottom: 55%;
   }
    /* ==========================================================================
    FAQ Page
@@ -669,7 +659,7 @@ input[type=button] {
   font-size: .875em;
   line-height: 1.125;
 }
-   }
+}
 
 /*------------------------*/
 
@@ -706,7 +696,7 @@ input[type=button] {
     }
     aside .content-wrapper .form-description
     aside .content-wrapper .form {
-      width: 30%;
+      width: 40%;
     }
     .form-description p {
       font-size: 1.125em;
@@ -731,7 +721,11 @@ input[type=button] {
      /* ==========================================================================
    About Page
    ========================================================================== */
-  .mission h2,
+   .map figure {
+    padding-bottom: 37.5%;
+  }
+
+   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
     font-size: 3em;
@@ -740,9 +734,6 @@ input[type=button] {
     font-size: 1.875em;
   }
 
-  .map figure {
-    padding-bottom: 47%;
-  }
    /* ==========================================================================
    FAQ Page
    ========================================================================== */
