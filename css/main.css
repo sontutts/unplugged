@@ -615,6 +615,11 @@ input[type=button] {
     footer .contact {
       margin-bottom: 0;
     }
+
+    footer .social-icons {
+      justify-content: space-between;
+      width: 200px;
+    }
     footer h4 {
       font-size: 1.5em;
       margin-bottom: 40px;
